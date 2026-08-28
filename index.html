@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hair Tech Salon — Concept Demo</title>
+<meta name="description" content="Hair Tech Salon concept website demo.">
+<style>
+:root{--bg:#f4efe9;--ink:#171513;--muted:#766e67;--accent:#b77950;--card:#fffaf5;--line:#ddd3ca}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+a{color:inherit;text-decoration:none}.notice{background:#171513;color:#fff;text-align:center;padding:10px 14px;font-size:10px;letter-spacing:.18em}
+nav{position:sticky;top:0;z-index:10;background:#f4efe9ee;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:17px 6vw}
+.logo{font:27px Georgia,serif}.logo small{display:block;font:9px Arial,sans-serif;letter-spacing:.2em;color:var(--muted);margin-top:2px}
+.links{display:flex;gap:25px;align-items:center;font-size:13px}.book{background:#171513;color:#fff;padding:10px 16px;border-radius:999px}
+.hero{min-height:80vh;padding:75px 6vw 65px;display:grid;grid-template-columns:1fr .85fr;gap:50px;align-items:center}
+.kicker{font-size:11px;font-weight:bold;letter-spacing:.24em;text-transform:uppercase;color:var(--accent)}
+h1{font:clamp(58px,8vw,110px)/.88 Georgia,serif;margin:18px 0}h1 i{color:var(--accent);font-weight:normal}
+.lead{font-size:18px;line-height:1.75;color:var(--muted);max-width:560px}.actions{display:flex;gap:12px;margin-top:28px}.btn{border:1px solid var(--ink);padding:14px 21px;border-radius:4px;font-weight:bold}.primary{background:var(--ink);color:white}
+.heroart{height:570px;border-radius:170px 170px 16px 16px;background:radial-gradient(circle at 68% 25%,#e2c8b1 0 9%,transparent 10%),linear-gradient(150deg,#d9c6b6,#88634f 52%,#302622);position:relative;overflow:hidden;box-shadow:0 30px 80px #66514430}.heroart:after{content:"HAIR TECH";position:absolute;bottom:28px;left:28px;color:#fff;letter-spacing:.3em;font-size:11px}
+section{padding:80px 6vw;border-top:1px solid var(--line)}.head{display:flex;justify-content:space-between;align-items:end;gap:25px;margin-bottom:30px}h2{font:clamp(38px,5vw,64px)/1 Georgia,serif;margin:5px 0 0}.muted{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.card{background:var(--card);border:1px solid var(--line);padding:25px}.card h3{margin-top:0;font:25px Georgia,serif}.price{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px dashed var(--line);font-size:14px}
+.gallery{display:grid;grid-template-columns:1.2fr .8fr .8fr;grid-auto-rows:220px;gap:12px}.tile{position:relative;overflow:hidden;background:linear-gradient(135deg,#d6c0ae,#60483d)}.tile:nth-child(2){background:linear-gradient(135deg,#e7d9ce,#997762)}.tile:nth-child(3){background:linear-gradient(135deg,#b18b74,#3b302b)}.tile:nth-child(4){background:linear-gradient(135deg,#ddd1c7,#725446)}.tile:nth-child(5){background:linear-gradient(135deg,#a88772,#332b28)}.tile span{position:absolute;left:16px;bottom:13px;color:#fff;font-size:11px;letter-spacing:.18em}.wide{grid-row:span 2}
+.cta{background:#191715;color:#fff;display:flex;align-items:center;justify-content:space-between;gap:30px}.cta .muted{color:#c7beb8}.cta .btn{background:#fff;color:#171513}
+footer{padding:35px 6vw;color:var(--muted);font-size:12px;display:flex;justify-content:space-between}
+@media(max-width:760px){.links{display:none}.hero{grid-template-columns:1fr;padding-top:52px}.heroart{height:390px}.grid{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr;grid-auto-rows:170px}.wide{grid-row:span 2}.head{display:block}.cta{display:block}.cta .btn{display:inline-block;margin-top:15px}section{padding:60px 6vw}}
+</style>
+</head>
+<body>
+<div class="notice">CONCEPT DEMO · NOT THE OFFICIAL HAIR TECH SALON WEBSITE</div>
+<nav>
+<a class="logo" href="#">Hair Tech<small>SALON · SINGAPORE</small></a>
+<div class="links"><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a><a class="book" href="#book">Book</a></div>
+</nav>
+
+<section class="hero">
+<div>
+<div class="kicker">Hair · Beauty · Confidence</div>
+<h1>Good hair,<br><i>good mood.</i></h1>
+<p class="lead">A modern, mobile-first concept for Hair Tech Salon — designed to make services, pricing, the salon experience and appointments easier to discover.</p>
+<div class="actions"><a class="btn primary" href="#services">View services</a><a class="btn" href="#book">Book appointment</a></div>
+</div>
+<div class="heroart"></div>
+</section>
+
+<section id="services">
+<div class="head"><div><div class="kicker">01 / Services</div><h2>Made for your hair.</h2></div><p class="muted">Concept content — confirm final prices with the salon.</p></div>
+<div class="grid">
+<div class="card"><h3>Cut & Style</h3><div class="price"><span>Haircut</span><b>Enquire</b></div><div class="price"><span>Wash & Blow</span><b>Enquire</b></div><div class="price"><span>Kids Cut</span><b>Enquire</b></div></div>
+<div class="card"><h3>Colour</h3><div class="price"><span>Full Colour</span><b>Enquire</b></div><div class="price"><span>Highlights</span><b>Enquire</b></div><div class="price"><span>Colour Touch-up</span><b>Enquire</b></div></div>
+<div class="card"><h3>Treatment</h3><div class="price"><span>Hair Treatment</span><b>Enquire</b></div><div class="price"><span>Scalp Care</span><b>Enquire</b></div><div class="price"><span>Perm / Rebonding</span><b>Enquire</b></div></div>
+</div>
+</section>
+
+<section id="gallery">
+<div class="head"><div><div class="kicker">02 / Gallery</div><h2>The salon, in focus.</h2></div><p class="muted">Replace these concept panels with approved salon photos.</p></div>
+<div class="gallery"><div class="tile wide"><span>SALON</span></div><div class="tile"><span>STYLE</span></div><div class="tile"><span>COLOUR</span></div><div class="tile"><span>DETAIL</span></div><div class="tile"><span>BEAUTY</span></div></div>
+</section>
+
+<section id="visit">
+<div class="head"><div><div class="kicker">03 / Visit</div><h2>Come say hello.</h2></div></div>
+<div class="grid">
+<div class="card"><h3>Location</h3><p class="muted">Singapore<br>Official address can be added after confirmation.</p></div>
+<div class="card"><h3>Opening hours</h3><p class="muted">Current hours can be added after confirmation.</p></div>
+<div class="card"><h3>Contact</h3><p class="muted">Phone · WhatsApp · Instagram<br>Official links can be connected after approval.</p></div>
+</div>
+</section>
+
+<section id="book" class="cta">
+<div><div class="kicker">04 / Appointment</div><h2>Ready for a change?</h2><p class="muted">Demo booking area — connect this to the salon's real booking system after approval.</p></div>
+<a class="btn" href="#visit">Contact salon</a>
+</section>
+
+<footer><span>Hair Tech Salon · Concept Demo</span><span>Design proposal · 2026</span></footer>
+</body>
+</html>
